@@ -68,6 +68,9 @@ const Demo = () => {
     // Use the default voice
     speech.voice = speechSynthesis.getVoices()[0];
 
+    // Set the speech speed
+    speech.rate = 0.9;
+
     // Speak the text
     window.speechSynthesis.speak(speech);
 
